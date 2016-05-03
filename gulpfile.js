@@ -14,7 +14,7 @@ gulp.task("default", ["build", "watch", "sync"]);
 var source = {
 		markup: "source/*.jade",
 		scripts: "source/scripts/*.js",
-		styles: "source/styles/*.sass",
+		styles: "source/styles/*.scss",
 		images: "source/images/**/*.*"
 	},
 	public = {

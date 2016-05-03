@@ -1,147 +1,35 @@
 doctype html
-//if lt IE 7
-  html.no-js.lt-ie9.lt-ie8.lt-ie7(lang='')  
-//if IE 7
-  html.no-js.lt-ie9.lt-ie8(lang='')  
-//if IE 8
-  html.no-js.lt-ie9(lang='')  
-// [if gt IE 8] <!
-html.no-js(lang='')
-  // <![endif]
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-    title LoftSchool Test
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    link(rel="stylesheet", href="/styles/main.css")
-    // script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  body
-    
-    // Page Header
-    header.page-header
-      div
-        // Userpic
-        img.user-pic(src="/images/scrubs.png", alt="Изображение пользователя")
-        // User Info
-        .user-info
-          .user-info__name Быстров Борис Викторович
-          .user-info__mail bystrov@gmail.com
-      // Social Links
-      ul.social
-        li.social__item
-          a(href="http://github.com")
-            img.social__item-logo(src="/images/git.svg", alt="")
-        li.social__item
-          a(href="http://skype.com")
-            img.social__item-logo(src="/images/sk.svg", alt="")
-        li.social__item
-          a(href="http://vk.com")
-            img.social__item-logo(src="/images/vk.svg", alt="")
-    section.about
-      .wrapper
-        h1.h1 О будущем ученике
-        h2.h2 Ребятам их Loftschool будет полезно узнать немного обо мне
-        article.about__article.about__article_left
-          .about__article-img
-            img(src="/images/hello.svg", alt="")
-          .about__article-text
-            h3.h3 Немного обо мне
-            p.p Я живу в Санкт-Петербурге (Россия). Мне 26 лет. Высшее образование - закончил НИУ ИТМО. Опыт в разработке 1 год. Уже окончил   курсы в Академии Программирования, где не плохо научился верстать. Пока есть только один сайт, которым могу похвастаться: 
-              a.link(href="http://yandex.ru/") www.yandex.ru
-        article.about__article.about__article_right
-          .about__article-img
-            img(src="/images/experience.svg", alt="")
-          .about__article-text
-            h3.h3 Мой опыт в разработке
-            p.p В этом блоке я расскажу о себе, что я уже умею. Здесь я укажу другие курсы, которые до этого я уже проходил. Могу перечислить технологии, которыми уже умею пользоваться. К примеру: html5, css3, sass, jade, git и пр.
-    .wrapper
-    
-      h1#done.h1.h1_success
-        span.fa.fa-check
-        |  Задание выполнено
-      .courses-heading
-        h1.h1 Курсы на loftblog
-        h2.h2 которые мне помогут в выполнении этого задания
-      .courses
-        .course
-          header.course__header
-            img.course__thumbnail(src="/images/th-1.png", alt="JavaScript")
-          section.course__info
-            h3.course__title Основы JavaScript
-            article.course__content Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.
-            p.course__length
-              span.fa.fa-clock-o
-              |  24 урока (6 часов 46 минут)
-          footer.course__footer
-            input#course__footer-check-1.course__footer-check(type="checkbox", name="done")
-            label.course__footer-text(for="course__footer-check-1") Посмотрел
-        .course
-          header.course__header
-            img.course__thumbnail(src="/images/th-2.png", alt="JavaScript")
-          section.course__info
-            h3.course__title Основы JQUERY
-            article.course__content Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.
-            p.course__length
-              span.fa.fa-clock-o
-              |  11 уроков (2 часа 6 минут)
-          footer.course__footer
-            input#course__footer-check-2.course__footer-check(type="checkbox", name="done")
-            label.course__footer-text(for="course__footer-check-2") Посмотрел
-        .course
-          header.course__header
-            img.course__thumbnail(src="/images/th-3.png", alt="JavaScript")
-          section.course__info
-            h3.course__title Базовые элементы страницы
-            article.course__content Видеокурс по верстке и программированию основных и популярных элементов сайтов. Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.
-            p.course__length
-              span.fa.fa-clock-o
-              |  9 уроков (2 часа 7 минут)
-          footer.course__footer
-            input#course__footer-check-3.course__footer-check(type="checkbox", name="done")
-            label.course__footer-text(for="course__footer-check-3") Посмотрел
-        .course
-          header.course__header
-            img.course__thumbnail(src="/images/th-4.png", alt="JavaScript")
-          section.course__info
-            h3.course__title Создание адаптивных сайтов
-            article.course__content В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная верстка и дизайн.
-            p.course__length
-              span.fa.fa-clock-o
-              |  7 уроков (2 часа 11 минут)
-          footer.course__footer
-            input#course__footer-check-4.course__footer-check(type="checkbox", name="done")
-            label.course__footer-text(for="course__footer-check-4") Посмотрел
-        .course
-          header.course__header
-            img.course__thumbnail(src="/images/th-5.png", alt="JavaScript")
-          section.course__info
-            h3.course__title Верстка адаптивной css галереи
-            article.course__content В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно.
-            p.course__length
-              span.fa.fa-clock-o
-              |  6 уроков (1 час 9 минут)
-          footer.course__footer
-            input#course__footer-check-5.course__footer-check(type="checkbox", name="done")
-            label.course__footer-text(for="course__footer-check-5") Посмотрел
-        .course
-          header.course__header
-            img.course__thumbnail(src="/images/th-6.png", alt="JavaScript")
-          section.course__info
-            h3.course__title Верстка адаптивной css галереи
-            article.course__content В этом курсе мы разберем как сверстать адаптивную css галерею. Также познакомимся с Flexbox.
-            p.course__length
-              span.fa.fa-clock-o
-              |  7 уроков (2 часа 11 минут)
-          footer.course__footer
-            input#course__footer-check-6.course__footer-check(type="checkbox", name="done")
-            label.course__footer-text(for="course__footer-check-6") Посмотрел
-    // Footer
-    footer.page-footer
-      p А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера,<br> не зависимо от количества контента на странице и размера окна.
-    //if IE
-      script(src='https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js')
-      script(src='https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js')
-    script(src="https://code.jquery.com/jquery-2.2.3.min.js", integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=", crossorigin="anonymous")
-    script(src="/scripts/main.js")
-      
-
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+	link(rel="stylesheet", href="styles/main.css")
+body
+	.wrapper
+		// header
+		header.page-header
+			.page-header__userpic
+				a.userpic(href="#")
+					img.userpic__image(src="images/scrubs.png", alt="")
+			.page-header__userinfo
+				ul.userinfo
+					li.userinfo__item Быстров Борис Викторович
+					li.userinfo__item bystrov@gmail.com
+			.page-header__social
+				ul.social
+					li.social__item
+						a(href="#")
+							i.fa.fa-github
+					li.social__item
+						a(href="#")
+							i.fa.fa-skype
+					li.social__item
+						a(href="#")
+							i.fa.fa-vk
+		// about
+		section.about-wrapper
+		// courses
+		section.course-wrapper
+		//footer
+	footer.page-footer
+		.page-footer__descr А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера, не зависимо от количества контента на странице и размера окна.

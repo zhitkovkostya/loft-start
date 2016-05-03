@@ -1,0 +1,164 @@
+@import "base";
+@import "header";
+@import "footer";
+@import url(//fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700&subset=latin,cyrillic);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
+@import url(../../bower_components/normalize-scss/sass/normalize);
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  padding-bottom: 72px;
+}
+
+/* @import url(//fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700&subset=latin,cyrillic);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
+@import "base";
+@import "header";
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #212121;
+  background-image: url(/images/gplaypattern.png);
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.about {
+  background-color: white;
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+.article-wrapper {
+  padding-top: 35px;
+}
+
+.article {
+  display: inline-block;
+  margin-right: -5px;
+  width: 49%;
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  &-img {
+    float:left;
+    margin-right: 20px;
+  }
+  &-text {
+    float:left;
+    font-weight: 300;
+  }
+}
+
+.courses {
+
+}
+
+.course {
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+  margin-right: -5px;
+  background-color: white;
+  box-shadow: 0 0 10px 2px rgba(72, 72, 72, 0.3);
+  border-radius: 3px;
+  &__info {
+  }
+  &__thumbnail {
+    cursor: pointer;
+  }
+  &__title {
+    font-size: 21px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  &__content {
+    color: #727272;
+    font-weight: 300;
+  }
+  &__length {
+    color: #b6b6b6;
+    font-weight: 300;
+  }
+  &__footer {
+    background-color: #f6f7f2;
+    font-size: 18px;
+    font-weight: 400;
+    color: #727272;
+    &-check {
+      cursor: pointer;
+    }
+    &-text {
+      cursor: pointer;
+    }
+  }
+  &:hover .course__thumbnail:after {
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #8cc34b;
+  }
+  &:hover .course__title {
+    color: #8cc34b;
+  }
+}
+
+.page-footer {
+  background-color: #212121;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#done {
+  display: none;
+} */

@@ -1,160 +1,331 @@
+/* // Basic Typography
+* {
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 42px;
+  font-weight: 500;
+  margin: 0;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: 300;
+  color: #727272;
+  margin: 0;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.link {
+  color: #29b0f5;
+  border-bottom: 1px solid #29b0f5;
+  text-decoration: none;
+}
+
+.title {
+  &-main {
+    text-align: center;
+    margin-top: 65px;
+    &_success {
+      color: #8cc34b;
+    }
+  }
+  &-secondary {
+    text-align: center;
+    margin-top: 4px;
+  }
+} */
+/* .page-header {
+	padding-top: 14px;
+	padding-left: 28px;
+	padding-right: 28px;
+	padding-bottom: 14px;
+	background-color: #8cc34b;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+
+.user-pic {
+	float: left;
+	margin-right: 18px;
+	border-radius: 50%;
+	border: 1px solid white;
+}
+
+.user-info {
+	float: left;
+	// Shame
+	margin-top: 5px;
+	// !Shame
+	&__name {
+		font-size: 21px;
+		font-weight: 500;
+		color: white;
+	}
+	&__mail {
+		font-size: 14px;
+		font-weight: 400;
+		color: white;
+	}
+}
+
+.social {
+	float: right;
+	// Shame
+	margin-top: 16px;
+	// !Shame
+	&__item {
+		display: inline-block;
+		&:not(:last-child) {
+			margin-right: 18px;
+		}
+	}
+} */
 @import url(//fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700&subset=latin,cyrillic);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
+@import url(../../bower_components/normalize-scss/sass/normalize);
+.page-header {
+  position: relative;
+  height: 90px;
+  padding: 14px 28px;
+  background-color: #8cc34b;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+  .page-header:after {
+    content: " ";
+    display: table;
+    clear: both; }
+  .page-header__userpic {
+    float: left;
+    margin-right: 18px; }
+  .page-header__userinfo {
+    float: left;
+    position: relative;
+    height: 100%; }
+  .page-header__social {
+    float: right;
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.userpic {
+  display: inline-block; }
+  .userpic__image {
+    vertical-align: bottom;
+    max-width: 62px;
+    max-height: 62px;
+    border-radius: 50%;
+    border: 1px solid white; }
+
+.userinfo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+  .userinfo__item {
+    white-space: nowrap; }
+    .userinfo__item:first-child {
+      color: #fff;
+      font-size: 21.26px;
+      font-weight: 400; }
+    .userinfo__item:last-child {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 14.17px;
+      font-weight: 400; }
+
+.social__item {
+  display: inline-block; }
+  .social__item:not(:last-child) {
+    margin-right: 20px; }
+  .social__item a {
+    font-size: 33px;
+    color: rgba(255, 255, 255, 0.7); }
+    .social__item a:hover {
+      color: white; }
+
+.page-footer {
+  position: relative;
+  width: 100%;
+  height: 72px;
+  margin-top: -72px;
+  background-color: #212121;
+  overflow: hidden; }
+  .page-footer__descr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 510px;
+    height: 40px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5); }
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+li {
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  min-height: 100%;
+  padding-bottom: 72px; }
+
+/* @import url(//fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700&subset=latin,cyrillic);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
+@import "base";
+@import "header";
+
 html, body {
   height: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 body {
   font-family: "Fira Sans", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: #212121;
-  background-image: url(/images/gplaypattern.png); }
-
-.h1 {
-  font-size: 42px;
-  font-weight: 500;
-  text-align: center; }
-  .h1_success {
-    color: #8cc34b; }
-
-.h2 {
-  font-size: 21px;
-  font-weight: 300;
-  text-align: center;
-  color: #727272; }
-
-.h3 {
-  font-size: 21px;
-  font-weight: 400; }
-
-.link {
-  color: #29b0f5;
-  border-bottom: 1px solid #29b0f5;
-  text-decoration: none; }
-
-.page-header {
-  padding-top: 14px;
-  padding-right: 28px;
-  padding-bottom: 14px;
-  padding-left: 28px;
-  background-color: #8cc34b;
-  overflow: auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  position: relative;
-  display: flex;
-  justify-content: space-between; }
-
-.user-pic {
-  border-radius: 50%;
-  border: 1px solid #fff;
-  float: left; }
-
-.user-info {
-  margin: auto 0 auto 19px;
-  color: #fff;
-  float: left; }
-  .user-info__name {
-    font-size: 21px;
-    font-weight: 500; }
-  .user-info__user-mail {
-    font-size: 14px;
-    font-weight: 400; }
-
-.social {
-  float: right;
-  list-style: none; }
-  .social__item {
-    display: inline-block;
-    padding-left: 20px; }
-    .social__item-logo {
-      fill: blue; }
+  background-image: url(/images/gplaypattern.png);
+}
 
 .wrapper {
-  width: 960px;
+  max-width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
-  overflow: auto; }
+}
 
 .about {
-  background-color: #fff;
-  overflow: auto;
-  padding-bottom: 36px; }
-  .about__article {
-    width: 460px;
-    float: left; }
-    .about__article-img {
-      display: inline-block;
-      float: left; }
-    .about__article-text {
-      width: 300px;
-      padding-left: 20px;
-      float: left;
-      display: inline-block;
-      font-weight: 300; }
-    .about__article_left {
-      float: left; }
-    .about__article_right {
-      float: right; }
+  background-color: white;
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+.article-wrapper {
+  padding-top: 35px;
+}
+
+.article {
+  display: inline-block;
+  margin-right: -5px;
+  width: 49%;
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  &-img {
+    float:left;
+    margin-right: 20px;
+  }
+  &-text {
+    float:left;
+    font-weight: 300;
+  }
+}
 
 .courses {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 120px; }
+
+}
 
 .course {
-  background-color: #fff;
+  display: inline-block;
   width: 300px;
-  float: left;
+  vertical-align: top;
+  margin-right: -5px;
+  background-color: white;
   box-shadow: 0 0 10px 2px rgba(72, 72, 72, 0.3);
   border-radius: 3px;
-  height: 100%;
-  margin-bottom: 30px; }
-  .course__info {
-    padding-left: 20px;
-    padding-right: 20px; }
-  .course__thumbnail {
-    cursor: pointer; }
-  .course__title {
+  &__info {
+  }
+  &__thumbnail {
+    cursor: pointer;
+  }
+  &__title {
     font-size: 21px;
     font-weight: 400;
-    cursor: pointer; }
-  .course__content {
+    cursor: pointer;
+  }
+  &__content {
     color: #727272;
-    font-weight: 300; }
-  .course__length {
+    font-weight: 300;
+  }
+  &__length {
     color: #b6b6b6;
-    font-weight: 300; }
-  .course__footer {
-    padding: 16px 20px;
+    font-weight: 300;
+  }
+  &__footer {
     background-color: #f6f7f2;
     font-size: 18px;
     font-weight: 400;
-    color: #727272; }
-    .course__footer-check {
-      cursor: pointer; }
-    .course__footer-text {
+    color: #727272;
+    &-check {
       cursor: pointer;
-      display: inline-block;
-      margin-left: 20px; }
-  .course:hover .course__thumbnail {
-    border-bottom: 5px solid #8cc34b;
-    margin-bottom: -5px; }
-  .course:hover .course__title {
-    color: #8cc34b; }
+    }
+    &-text {
+      cursor: pointer;
+    }
+  }
+  &:hover .course__thumbnail:after {
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #8cc34b;
+  }
+  &:hover .course__title {
+    color: #8cc34b;
+  }
+}
 
 .page-footer {
   background-color: #212121;
+  text-align: center;
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
   font-weight: 400;
-  padding: 1px 20px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%; }
+}
 
 #done {
-  display: none; }
+  display: none;
+} */
