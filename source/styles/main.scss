@@ -1,164 +1,172 @@
 @import "base";
 @import "header";
 @import "footer";
-@import url(//fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700&subset=latin,cyrillic);
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
-@import url(../../bower_components/normalize-scss/sass/normalize);
 
 html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 
-  font-family: "Fira Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.5;
+	font-family: "Fira Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.5;
 }
 
 * {
-  box-sizing: border-box;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
 }
 
 .wrapper {
-  min-height: 100%;
-  padding-bottom: 72px;
+	min-height: 100%;
+	padding-bottom: 72px;
 }
 
-/* @import url(//fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700&subset=latin,cyrillic);
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
-@import "base";
-@import "header";
-
-html, body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
+.container {
+	max-width: 940px;
+	margin: 0 auto;
 }
 
-body {
-  font-family: "Fira Sans", sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #212121;
-  background-image: url(/images/gplaypattern.png);
-}
-
-.wrapper {
-  max-width: 940px;
-  margin: 0 auto;
+.about-wrapper {
+	padding: 65px 0;
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
 }
 
 .about {
-  background-color: white;
-  &:after {
-    content: " ";
-    display: table;
-    clear: both;
-  }
+	position: relative;
+	display: inline-block;
+	width: 47%;
+	vertical-align: top;
+	padding: 0 0 0 161px;
+	&:nth-child(2n) {
+		margin-right: 32px;
+	}
+	&__image {
+		max-width: 140px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	&__title {
+		margin-top: 0px;
+		color: #212121;
+		font-size: 21px;
+		font-weight: 400;
+	}
+	&__text {
+		margin-top: 10px;
+		font-weight: 300;
+	}
 }
 
-.article-wrapper {
-  padding-top: 35px;
-}
-
-.article {
-  display: inline-block;
-  margin-right: -5px;
-  width: 49%;
-  &:after {
-    content: " ";
-    display: table;
-    clear: both;
-  }
-  &-img {
-    float:left;
-    margin-right: 20px;
-  }
-  &-text {
-    float:left;
-    font-weight: 300;
-  }
+.course-wrapper {
+	padding: 65px 0px 38px 0px;
+	background-image: url("../images/gplaypattern.png");
 }
 
 .courses {
-
+	padding-top: 5px;
+	@include inline-justify;
 }
 
 .course {
-  display: inline-block;
-  width: 300px;
-  vertical-align: top;
-  margin-right: -5px;
-  background-color: white;
-  box-shadow: 0 0 10px 2px rgba(72, 72, 72, 0.3);
-  border-radius: 3px;
-  &__info {
-  }
-  &__thumbnail {
-    cursor: pointer;
-  }
-  &__title {
-    font-size: 21px;
-    font-weight: 400;
-    cursor: pointer;
-  }
-  &__content {
-    color: #727272;
-    font-weight: 300;
-  }
-  &__length {
-    color: #b6b6b6;
-    font-weight: 300;
-  }
-  &__footer {
-    background-color: #f6f7f2;
-    font-size: 18px;
-    font-weight: 400;
-    color: #727272;
-    &-check {
-      cursor: pointer;
-    }
-    &-text {
-      cursor: pointer;
-    }
-  }
-  &:hover .course__thumbnail:after {
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color: #8cc34b;
-  }
-  &:hover .course__title {
-    color: #8cc34b;
-  }
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	width: 300px;
+	background-color: white;
+	box-shadow: 0 0 10px 2px rgba(72, 72, 72, 0.3);
+	border-radius: 3px;
+	margin-bottom: 23px;
+	&-header {
+		position: relative;
+		&__thumbnail {
+			vertical-align: bottom;
+		}
+	}
+	&-content {
+		padding: 7px 20px 13px 20px;
+		&__title {
+			margin-top: 11px;
+			font-size: 21px;
+			font-weight: 400;
+			cursor: pointer;
+		}
+		&__length {
+			color: #b6b6b6;
+		}
+	}
+	&-footer {
+		padding: 13px 20px;
+		background-color: #f6f7f2;
+		font-size: 18px;
+		font-weight: 400;
+		color: #727272;
+		input[type="checkbox"] {
+		  display: none;
+		  & + .course-footer__text:before {
+		    font-family: FontAwesome;
+		    font-weight: normal;
+		    font-style: normal;
+		    display: inline-block;
+		    vertical-align: middle;
+		    margin-right: 19px;
+		    text-decoration: inherit;
+		    color: #b6b6b6;
+		    content: "\f096";
+		    font-size: 23px;
+		  }
+		  &:checked {
+		    & + .course-footer__text:before {
+		      color: #acd27d;
+		      content: "\f14a";
+		    }
+		  }
+		}
+		label {
+			cursor: pointer;
+		}
+	}
+	&:hover {
+		.course-content__title {
+			color: #8cc34b;
+		}
+		.course-header {
+			&:after {
+				content: " ";
+				display: block;
+				height: 4px;
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				background-color: #8cc34b;
+			}
+		}
+	}
 }
 
-.page-footer {
-  background-color: #212121;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  font-weight: 400;
+.done {
+	color: #8cc34b;
+	&:before {
+		font-family: FontAwesome;
+		font-weight: normal;
+		font-style: normal;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 19px;
+		text-decoration: inherit;
+		color: #8cc34b;
+		content: "\f00c";
+		font-size: 34,69px;
+	}
 }
-
-#done {
-  display: none;
-} */

@@ -1,18 +1,17 @@
 $(document).ready(function(){
   var counter = 0;
-  $('input[type="checkbox"]').click(function(){
+  $('.course-footer__check').click(function(){
     var checkbox = $(this);
     if(checkbox.prop("checked") == true){
-      checkbox.closest( "footer" ).css( "background-color", "#e8f1dc" );
-      checkbox.closest( ".course" ).css( "background-color", "#edf5e3" );
-      checkbox.closest(".course__footer").find("label").css("color","#acd37e");
-      //
+      checkbox.closest(".course").find(".course-content").css("background-color","#e8f3db");
+      checkbox.closest(".course-footer").css("background-color","#e1edd1");
+      checkbox.closest(".course").css("opacity","0.7");
       setTimeout(function() {
-        checkbox.closest( ".course" ).remove();
+        checkbox.closest(".course").remove();
         counter++;
-        if (counter == 5) {
-          $(".courses-heading").hide();
-          $("#done").css("display", "block");
+        if (counter == 6) {
+          $(".course-wrapper").empty();
+          $(".course-wrapper").append("<h1 class='done'>Задание выполнено</h1>");
         }
       }, 1000);
     }

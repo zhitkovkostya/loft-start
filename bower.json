@@ -1,6 +1,0 @@
-{
-  "name": "loft-start",
-  "dependencies": {
-    "normalize-scss": "normalize.scss#^4.2.1"
-  }
-}

@@ -1,51 +1,56 @@
-/* // Basic Typography
-* {
-  box-sizing: border-box;
-}
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-li {
-  margin: 0;
-  padding: 0;
-}
-h1 {
-  font-size: 42px;
-  font-weight: 500;
-  margin: 0;
+@import url(//fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700&subset=latin,cyrillic);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
+
+@mixin inline-justify {
+  text-align: justify;
+  &:after {
+    content: " ";
+    display: inline-block;
+    width: 100%;
+  }
 }
 
-h2 {
-  font-size: 21px;
-  font-weight: 300;
-  color: #727272;
-  margin: 0;
-}
-
-h3 {
-  font-size: 21px;
-  font-weight: 400;
-}
-
-.link {
+a {
   color: #29b0f5;
   border-bottom: 1px solid #29b0f5;
   text-decoration: none;
 }
 
-.title {
-  &-main {
-    text-align: center;
-    margin-top: 65px;
-    &_success {
-      color: #8cc34b;
-    }
-  }
-  &-secondary {
-    text-align: center;
+h1 {
+  display: block;
+  margin-top: 0;
+  text-align: center;
+  color: #212121;
+  font-size: 42px;
+  font-weight: 500;
+  small {
+    display: block;
     margin-top: 4px;
+    text-align: center;
+    color: #727272;
+    font-size: 21px;
+    font-weight: 300;
   }
-} */
+}
 
+h3 {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  line-height: 24px;
+}
+
+p {
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}

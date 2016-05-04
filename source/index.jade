@@ -6,7 +6,6 @@ head
 	link(rel="stylesheet", href="styles/main.css")
 body
 	.wrapper
-		// header
 		header.page-header
 			.page-header__userpic
 				a.userpic(href="#")
@@ -26,10 +25,105 @@ body
 					li.social__item
 						a(href="#")
 							i.fa.fa-vk
-		// about
 		section.about-wrapper
-		// courses
+			.container
+				h1 О будущем ученике
+					small Ребятам из Loftschool будет полезно узнать немного обо мне
+				.about
+					img.about__image(src="images/hello.svg", alt="")
+					h3.about__title Немного обо мне
+					p.about__text Я живу в Санкт-Петербурге (Россия). Мне 26 лет. Высшее образование - закончил НИУ ИТМО. Опыт в разработке 1 год. Уже окончил курсы в Академии Программирования, где не плохо научился верстать.
+						br
+						| Пока есть только один сайт, которым могу похвастаться: 
+						a(href="#") www.yandex.ru
+				.about
+					img.about__image(src="images/experience.svg", alt="")
+					h3.about__title Мой опыт в разработке
+					p.about__text В этом блоке я расскажу о себе, что я уже умею. Здесь я укажу другие курсы, которые до этого я уже проходил. Могу перечислить технологии, которыми уже умею пользоваться. К примеру: html5, css3, sass, jade, git и пр.
 		section.course-wrapper
-		//footer
+			.container
+				h1 Курсы на loftblog
+					small которые мне помогут в выполнении этого задания
+				ul.courses
+					li.course
+						header.course-header
+							img.course-header__thumbnail(src="images/th-1.png", alt="")
+						section.course-content
+							h3.course-content__title Основы JavaScript
+							p Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.
+							span.course-content__length
+								i.fa.fa-clock-o
+								|  24 урока (6 часов 46 минут)
+						footer.course-footer
+							label
+								input.course-footer__check(type="checkbox" id="done")
+								span.course-footer__text Посмотрел
+					li.course
+						header.course-header
+							img.course-header__thumbnail(src="images/th-2.png", alt="")
+						section.course-content
+							h3.course-content__title Основы JQUERY
+							p Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.
+							span.course-content__length
+								i.fa.fa-clock-o
+								|  11 уроков (2 часа 6 минут)
+						footer.course-footer
+							label
+								input.course-footer__check(type="checkbox" id="done")
+								span.course-footer__text Посмотрел
+					li.course
+						header.course-header
+							img.course-header__thumbnail(src="images/th-3.png", alt="")
+						section.course-content
+							h3.course-content__title Базовые элементы страницы
+							p Видеокурс по верстке и программированию основных и популярных элементов сайтов. Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.
+							span.course-content__length
+								i.fa.fa-clock-o
+								|  9 уроков (2 часа 7 минут)
+						footer.course-footer
+							label
+								input.course-footer__check(type="checkbox" id="done")
+								span.course-footer__text Посмотрел
+					li.course
+						header.course-header
+							img.course-header__thumbnail(src="images/th-4.png", alt="")
+						section.course-content
+							h3.course-content__title Создание адаптивных сайтов
+							p В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная верстка и дизайн.
+							span.course-content__length
+								i.fa.fa-clock-o
+								|  7 уроков (2 часа 11 минут)
+						footer.course-footer
+							label
+								input.course-footer__check(type="checkbox" id="done")
+								span.course-footer__text Посмотрел
+					li.course
+						header.course-header
+							img.course-header__thumbnail(src="images/th-5.png", alt="")
+						section.course-content
+							h3.course-content__title Верстка адаптивной css галереи
+							p В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно.
+							span.course-content__length
+								i.fa.fa-clock-o
+								|  6 уроков (1 час 9 минут)
+						footer.course-footer
+							label
+								input.course-footer__check(type="checkbox" id="done")
+								span.course-footer__text Посмотрел
+					li.course
+						header.course-header
+							img.course-header__thumbnail(src="images/th-6.png", alt="")
+						section.course-content
+							h3.course-content__title Верстка адаптивной css галереи
+							p В этом курсе мы разберем как сверстать адаптивную css галерею. Также познакомимся с Flexbox.
+							span.course-content__length
+								i.fa.fa-clock-o
+								|  4 урока (50 минут)
+						footer.course-footer
+							label
+								input.course-footer__check(type="checkbox" id="done")
+								span.course-footer__text Посмотрел
 	footer.page-footer
 		.page-footer__descr А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера, не зависимо от количества контента на странице и размера окна.
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js")
+	script(src="scripts/main.js")
