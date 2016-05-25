@@ -10,6 +10,9 @@ html {
 
 body {
 	height: 100%;
+	// Для статичной верстки
+	min-width: 957px;
+	// !Для статичной верстки
 	margin: 0;
 	padding: 0;
 
@@ -76,7 +79,6 @@ body {
 
 .courses {
 	padding-top: 5px;
-	@include inline-justify;
 }
 
 .course {
@@ -88,6 +90,9 @@ body {
 	box-shadow: 0 0 10px 2px rgba(72, 72, 72, 0.3);
 	border-radius: 3px;
 	margin-bottom: 23px;
+	&:not(:nth-child(3n)) {
+		margin-right: 16px;
+	}
 	&-header {
 		position: relative;
 		&__thumbnail {

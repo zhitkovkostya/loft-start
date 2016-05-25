@@ -6,10 +6,15 @@
 	background-color: #8cc34b;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 	
-	&:after {
-		content: " ";
-		display: table;
-		clear: both;
+	&__wrapper {
+		&:after {
+			content: " ";
+			display: table;
+			clear: both;
+		}
+		position: relative;
+		max-width: 1144px;
+		margin: 0 auto;
 	}
 	&__userpic {
 		float: left;
@@ -23,7 +28,7 @@
 	&__social {
 		float: right;
 		position: absolute;
-	    right: 28px;
+	    right: 0px;
     	top: 50%;
     	transform: translateY(-50%);
 	}
@@ -42,9 +47,7 @@
 }
 
 .userinfo {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	padding: 5px 0px;
 	&__item {
 		white-space: nowrap;
 		&:first-child {
